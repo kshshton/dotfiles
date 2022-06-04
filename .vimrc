@@ -5,6 +5,7 @@ set number
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 set clipboard=unnamedplus
+set encoding=utf-8
 set noswapfile
 set nocompatible
 filetype off
