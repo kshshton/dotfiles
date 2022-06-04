@@ -29,6 +29,7 @@ Plugin 'mattn/vim-lsp-settings'
 Plugin 'prabirshrestha/vim-lsp'
 Plugin 'prabirshrestha/asyncomplete.vim'
 Plugin 'prabirshrestha/asyncomplete-lsp.vim'
+Plugin 'artanikin/vim-synthwave84'
 call vundle#end()
 filetype plugin indent on
 
@@ -41,3 +42,5 @@ if has("gui_running")
     set guifont=Consolas:h11:cANSI
   endif
 endif
+
+colorscheme synthwave84
