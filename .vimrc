@@ -16,7 +16,7 @@ nnoremap K :tabn <CR>
 nnoremap <C-q> :q <CR>
 nnoremap Y y$
 nnoremap <F5> :!
-nnoremap ` :NERDTreeFind <CR>
+nnoremap <C-t> :NERDTreeFind <CR>
 map <ESC> :noh <CR>
 
 set rtp+=~/.vim/bundle/Vundle.vim
