@@ -15,7 +15,7 @@ nnoremap J :tabp <CR>
 nnoremap K :tabn <CR>
 nnoremap <C-q> :q <CR>
 nnoremap Y y$
-nnoremap <F5> :!
+nnoremap <F5> :!python %:t <CR>
 nnoremap <C-t> :NERDTreeFind <CR>
 map <ESC> :noh <CR>
 
