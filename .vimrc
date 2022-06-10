@@ -8,6 +8,7 @@ set clipboard=unnamedplus
 set encoding=utf-8
 set noswapfile
 set nocompatible
+let mapleader = " "
 filetype off
 
 inoremap jj <ESC>
@@ -18,6 +19,16 @@ nnoremap Y y$
 nnoremap <F5> :!python %:t <CR>
 nnoremap <C-t> :NERDTreeFind <CR>
 map <ESC> :noh <CR>
+
+nnoremap <leader>dd :LspDefinition<cr>
+nnoremap <leader>dn :LspNextDiagnostic<cr>
+nnoremap <leader>dN :LspPreviousDiagnostic<cr>
+nnoremap <leader>df :LspReferences<cr>
+nnoremap <leader>dr :LspRename<cr>
+nnoremap <leader>dp :LspPeekDefinition<cr>
+nnoremap <leader>da :LspCodeAction<cr>
+nnoremap <leader>dh :LspHover<cr>
+nnoremap <C-f> :LspDocumentFormat<cr> 
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
