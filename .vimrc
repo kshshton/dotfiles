@@ -40,5 +40,8 @@ Plugin 'mattn/vim-lsp-settings'
 Plugin 'prabirshrestha/vim-lsp'
 Plugin 'prabirshrestha/asyncomplete.vim'
 Plugin 'prabirshrestha/asyncomplete-lsp.vim'
+Plugin 'artanikin/vim-synthwave84'
 call vundle#end()
 filetype plugin indent on
+
+colorscheme synthwave84
