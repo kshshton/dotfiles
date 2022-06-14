@@ -14,35 +14,12 @@ filetype off
 inoremap jj <ESC>
 nnoremap J :tabp <CR>
 nnoremap K :tabn <CR>
-nnoremap <C-q> :q <CR>
 nnoremap Y y$
 nnoremap <F5> :!python %:t <CR>
-nnoremap <C-t> :NERDTreeFind <CR>
 map <ESC> :noh <CR>
-
-nnoremap <leader>dd :LspDefinition<cr>
-nnoremap <leader>dn :LspNextDiagnostic<cr>
-nnoremap <leader>dN :LspPreviousDiagnostic<cr>
-nnoremap <leader>df :LspReferences<cr>
-nnoremap <leader>dr :LspRename<cr>
-nnoremap <leader>dp :LspPeekDefinition<cr>
-nnoremap <leader>da :LspCodeAction<cr>
-nnoremap <leader>dh :LspHover<cr>
-nnoremap <C-f> :LspDocumentFormat<cr> 
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-filetype plugin indent on
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'preservim/nerdtree'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'mattn/vim-lsp-settings'
-Plugin 'prabirshrestha/vim-lsp'
-Plugin 'prabirshrestha/asyncomplete.vim'
-Plugin 'prabirshrestha/asyncomplete-lsp.vim'
-Plugin 'artanikin/vim-synthwave84'
-call vundle#end()
-filetype plugin indent on
+map <leader>m :marks <CR>
+map ` :!ls <CR>
+map <F2> :e .vimrc <CR>
 
 if has("gui_running")
   if has("gui_gtk2")
@@ -54,4 +31,14 @@ if has("gui_running")
   endif
 endif
 
-colorscheme synthwave84
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+filetype plugin indent on
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'mattn/vim-lsp-settings'
+Plugin 'prabirshrestha/vim-lsp'
+Plugin 'prabirshrestha/asyncomplete.vim'
+Plugin 'prabirshrestha/asyncomplete-lsp.vim'
+call vundle#end()
+filetype plugin indent on
