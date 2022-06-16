@@ -29,30 +29,9 @@ call vundle#begin()
 filetype plugin indent on
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'prabirshrestha/vim-lsp'
-Plugin 'mattn/vim-lsp-settings'
-Plugin 'prabirshrestha/asyncomplete.vim'
-Plugin 'prabirshrestha/asyncomplete-lsp.vim'
-Plugin 'vim-test/vim-test'
 Plugin 'arcticicestudio/nord-vim'
 call vundle#end()
 filetype plugin indent on
-
-"Lsp
-let g:lsp_diagnostics_enabled = 1
-let g:lsp_document_highlight_enabled = 1
-let g:lsp_log_verbose = 1
-let g:lsp_log_file = expand('~/vim-lsp.log')
-let g:asyncomplete_log_file = expand('~/asyncomplete.log')
-highlight lspReference ctermfg=red guifg=red ctermbg=green guibg=green
-
-"Tests
-nmap <silent> <leader>t :TestNearest<CR>
-nmap <silent> <leader>T :TestFile<CR>
-nmap <silent> <leader>a :TestSuite<CR>
-nmap <silent> <leader>l :TestLast<CR>
-nmap <silent> <leader>g :TestVisit<CR>
-let test#python#runner = 'pytest'
 
 "Font
 if has("gui_running")
