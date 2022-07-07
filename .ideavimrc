@@ -8,3 +8,4 @@ nnoremap K :tabn <CR>
 nnoremap Y y$
 map <ESC> :noh <CR>
 map <leader>m :marks <CR>
+map <leader>dm :delmarks A-Z0-9 <CR>
