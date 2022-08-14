@@ -1,0 +1,25 @@
+set clipboard+=unnamed
+set relativenumber
+set number
+
+let mapleader = " "
+inoremap jj <ESC>
+nnoremap J :tabp <CR>
+nnoremap K :tabn <CR>
+nnoremap Y y$
+map <ESC> :noh <CR>
+map <leader>m :marks <CR>
+map <leader>dm :delmarks A-Z0-9 <CR>
+
+call plug#begin()
+Plug 'tpope/vim-surround'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'adelarsq/vim-matchit'
+call plug#end()
+
+nnoremap <silent> <M-j> :MultipleCursorsFind <C-R>/<CR>
+vnoremap <silent> <M-j> :MultipleCursorsFind <C-R>/<CR>
+
+nnoremap <C-t> :action ActivateTerminalToolWindow<CR>
+nnoremap <C-e> :action ToggleLineBreakpoint<CR>
+nnoremap <C-d> :action Debug<CR>
