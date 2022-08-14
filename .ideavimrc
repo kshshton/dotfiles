@@ -20,6 +20,5 @@ call plug#end()
 nnoremap <silent> <M-j> :MultipleCursorsFind <C-R>/<CR>
 vnoremap <silent> <M-j> :MultipleCursorsFind <C-R>/<CR>
 
-nnoremap <C-t> :action ActivateTerminalToolWindow<CR>
 nnoremap <C-e> :action ToggleLineBreakpoint<CR>
 nnoremap <C-d> :action Debug<CR>
