@@ -20,7 +20,7 @@ nnoremap Y y$
 nnoremap <silent><leader><leader> :<C-u>CocFzfList<CR>
 map <F5> :!python %:t <CR>
 map <ESC> :noh <CR>
-map ` :Ex <CR>
+map <silent><leader>1 :Ex <CR>
 map <F2> :e C:\Users\owenk\.vimrc <CR>
 
 "Plugins
