@@ -17,7 +17,7 @@ inoremap jj <ESC>
 nnoremap J :tabp <CR>
 nnoremap K :tabn <CR>
 nnoremap Y y$
-nnoremap <silent><leader>f :<C-u>CocFzfList<CR>
+nnoremap <silent><leader><leader> :<C-u>CocFzfList<CR>
 map <F5> :!python %:t <CR>
 map <ESC> :noh <CR>
 map ` :Ex <CR>
