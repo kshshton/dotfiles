@@ -1,47 +1,28 @@
-"Sets
 syntax on
 set autochdir
 set relativenumber
 set number
 set tabstop=4 softtabstop=4
 set shiftwidth=4
-set clipboard=unnamed
+set clipboard=unnamedplus
 set encoding=utf-8
 set noswapfile
 set nocompatible
+set t_u7=
 filetype off
 
-"Mappings
 let mapleader = " "
 inoremap jj <ESC>
-nnoremap J :tabp <CR>
-nnoremap K :tabn <CR>
 nnoremap Y y$
-nnoremap <silent><leader><leader> :<C-u>CocFzfList<CR>
-map <F5> :!python %:t <CR>
-map <ESC> :noh <CR>
-map <silent><leader>1 :Ex <CR>
-map <F2> :e C:\Users\owenk\.vimrc <CR>
+map <silent><leader>1 :bd <CR>
+map <silent><leader>2 :Ex <CR>
+map <silent><leader>3 :!python %:t <CR>
 
-"Plugins
-call plug#begin()
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'jiangmiao/auto-pairs'
-Plug 'arcticicestudio/nord-vim'
-Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
-Plug 'antoinemadec/coc-fzf'
-call plug#end()
+augroup escape_mapping
+  autocmd!
+  autocmd InsertEnter * call s:setupEscapeMap()
+augroup END
 
-"Font
-if has("gui_running")
-  if has("gui_gtk2")
-    set guifont=Inconsolata\ 12
-  elseif has("gui_macvim")
-    set guifont=Menlo\ Regular:h14
-  elseif has("gui_win32")
-    set guifont=Consolas:h11:cANSI
-  endif
-endif
-
-"Scheme
-colorscheme nord
+function! s:setupEscapeMap()
+  nnoremap <Esc> :noh<CR><Esc>
+endfunction
