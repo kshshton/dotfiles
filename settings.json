@@ -1,0 +1,18 @@
+{
+    "vim.vimrc.enable": true,
+    "vim.smartRelativeLine": true,
+    "vim.useSystemClipboard": true,
+    "vim.leader": " ",
+    "editor.lineNumbers": "relative",
+    "emmet.triggerExpansionOnTab": true,
+    "files.associations": {"*html": "html"},
+    "terminal.integrated.fontFamily": "CaskaydiaCove NF",
+    "terminal.integrated.fontWeightBold": "normal",
+    "terminal.integrated.minimumContrastRatio": 3,
+    "terminal.integrated.gpuAcceleration": "canvas",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "workbench.colorTheme": "Tailwind Moon"
+}
