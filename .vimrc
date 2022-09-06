@@ -13,8 +13,6 @@ filetype off
 
 let mapleader = " "
 inoremap jj <ESC>
-nnoremap J :tabp <CR>
-nnoremap K :tabn <CR>
 nnoremap Y y$
 map <silent><leader>1 :bd <CR>
 map <silent><leader>2 :Ex <CR>
