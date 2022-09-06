@@ -1,13 +1,22 @@
-{
-    "vim.vimrc.enable": true,
+m.vimrc.enable": true,
     "vim.vimrc.path": "\\\\wsl$\\Ubuntu-20.04\\home\\owxn\\.vimrc",
     "vim.smartRelativeLine": true,
     "vim.useSystemClipboard": true,
     "vim.leader": " ",
+    "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["J"],
+      "commands": [":tabp"]
+    },
+    {
+      "before": ["K"],
+      "commands": [":tabn"]
+    }],
     "editor.lineNumbers": "relative",
     "emmet.triggerExpansionOnTab": true,
     "files.associations": {"*html": "html"},
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"
-    }
+    },
+    "workbench.startupEditor": "none"
 }
