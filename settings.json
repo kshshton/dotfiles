@@ -1,4 +1,5 @@
-m.vimrc.enable": true,
+{
+    "vim.vimrc.enable": true,
     "vim.vimrc.path": "\\\\wsl$\\Ubuntu-20.04\\home\\owxn\\.vimrc",
     "vim.smartRelativeLine": true,
     "vim.useSystemClipboard": true,
