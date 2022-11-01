@@ -14,9 +14,9 @@ filetype off
 let mapleader = " "
 inoremap jj <ESC>
 nnoremap Y y$
-map <silent><leader>1 :bd <CR>
+map <silent><leader>0 :bd <CR>
+map <silent><leader>1 :!perl % <CR>
 map <silent><leader>2 :Ex <CR>
-map <silent><leader>3 :!python %:t <CR>
 
 augroup escape_mapping
   autocmd!
@@ -26,3 +26,5 @@ augroup END
 function! s:setupEscapeMap()
   nnoremap <Esc> :noh<CR><Esc>
 endfunction
+
+colorscheme ron
