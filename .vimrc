@@ -14,9 +14,7 @@ filetype off
 let mapleader = " "
 inoremap jj <ESC>
 nnoremap Y y$
-map <silent><leader>0 :bd <CR>
-map <silent><leader>1 :!clear;printf '\n';perl % <CR>
-map <silent><leader>2 :Ex <CR>
+map ` :Ex <CR>
 
 augroup escape_mapping
   autocmd!
