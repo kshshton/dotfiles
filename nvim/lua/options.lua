@@ -12,4 +12,4 @@ opt.shiftwidth = 4
 opt.tabstop = 4
 opt.smartindent = true
 opt.hidden = true
-
+vim.cmd('colorscheme tokyonight-moon')
