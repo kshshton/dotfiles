@@ -10,7 +10,7 @@ end
 vim.g.mapleader = ' '
 
 map('i', 'jj', '<esc>')
-map('n', '<esc>', '<cmd>noh<cr>')
+map('n', '<leader>q', '<cmd>noh<cr>')
 map('n', 'J', '<cmd>tabp<cr>')
 map('n', 'K', '<cmd>tabn<cr>')
 map('n', 'Y', 'y$')
