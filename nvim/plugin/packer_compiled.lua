@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/owxn/.local/share/nvim/site/pack/packer/start/cmp-buffer",
     url = "https://github.com/hrsh7th/cmp-buffer"
   },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/home/owxn/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
   cmp_luasnip = {
     loaded = true,
     path = "/home/owxn/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
@@ -103,6 +108,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/owxn/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  melange = {
+    loaded = true,
+    path = "/home/owxn/.local/share/nvim/site/pack/packer/start/melange",
+    url = "https://github.com/savq/melange"
   },
   ["nvim-autopairs"] = {
     config = { "\27LJ\2\2@\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0" },

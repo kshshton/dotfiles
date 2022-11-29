@@ -7,7 +7,6 @@ end
 
 return require('packer').startup(function(use)
     use 'nvim-lua/plenary.nvim'
-    use 'folke/tokyonight.nvim'
     use 'neovim/nvim-lspconfig'
     use 'williamboman/mason.nvim'
     use 'williamboman/mason-lspconfig.nvim'
