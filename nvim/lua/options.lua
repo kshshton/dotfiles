@@ -1,7 +1,7 @@
 local g = vim.g
 local opt = vim.opt
 
-opt.clipboard = 'unnamed'
+opt.clipboard = 'unnamedplus'
 opt.swapfile = false
 opt.completeopt = 'menuone,noinsert,noselect'
 opt.number = true
@@ -12,3 +12,4 @@ opt.shiftwidth = 4
 opt.tabstop = 4
 opt.smartindent = true
 opt.hidden = true
+

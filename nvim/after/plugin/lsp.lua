@@ -23,6 +23,8 @@ mason.setup()
 mason_lspconfig.setup ({
     ensure_installed = {
         'pyright',
+        'sumneko_lua',
+        'clangd',
         'tsserver',
         'svelte',
         'html',
@@ -30,33 +32,25 @@ mason_lspconfig.setup ({
     }
 })
 
-local on_attach = function(client, bufnr) 
+local on_attach = function(_, bufnr) 
     local opts = { noremap = true, silent = true, buffer = bufnr }
 end
 local capabilities = require 'cmp_nvim_lsp'.default_capabilities()
 
-lspconfig['pyright'].setup({
-    capabilities = capabilities,
-    on_attach = on_attach
-})
+local lsp_servers = {
+    'pyright',
+    'sumneko_lua',
+    'clangd',
+    'tsserver',
+    'svelte',
+    'html',
+    'cssls'
+}
 
-lspconfig['tsserver'].setup({
-    capabilities = capabilities,
-    on_attach = on_attach
-})
-
-lspconfig['svelte'].setup({
-    capabilities = capabilities,
-    on_attach = on_attach
-})
-
-lspconfig['html'].setup({
-    capabilities = capabilities,
-    on_attach = on_attach
-})
-
-lspconfig['cssls'].setup({
-    capabilities = capabilities,
-    on_attach = on_attach
-})
+for _, server in pairs(lsp_servers) do
+    lspconfig[server].setup({
+        capabilities = capabilities,
+        on_attach = on_attach
+    })
+end
 

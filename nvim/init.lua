@@ -1,4 +1,3 @@
-require	'packer'
-require	'keymaps'
-require	'options'
-
+require('packer')
+require('keymaps')
+require('options')
