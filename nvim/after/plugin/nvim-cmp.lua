@@ -8,7 +8,7 @@ if not luasnip_status then
     return
 end
 
-require 'luasnip/loaders/from_vscode'.lazy_load()
+require('luasnip/loaders/from_vscode').lazy_load()
 
 vim.opt.completeopt = 'menu,menuone,noselect'
 local map = cmp.mapping
