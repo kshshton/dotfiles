@@ -1,4 +1,3 @@
-local g = vim.g
 local opt = vim.opt
 
 opt.clipboard = 'unnamedplus'
@@ -12,4 +11,3 @@ opt.shiftwidth = 4
 opt.tabstop = 4
 opt.smartindent = true
 opt.hidden = true
-

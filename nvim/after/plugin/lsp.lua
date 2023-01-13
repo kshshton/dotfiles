@@ -35,7 +35,7 @@ mason_lspconfig.setup ({
 local on_attach = function(_, bufnr) 
     local opts = { noremap = true, silent = true, buffer = bufnr }
 end
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
+local capabilities = require 'cmp_nvim_lsp'.default_capabilities()
 
 local lsp_servers = {
     'pyright',
