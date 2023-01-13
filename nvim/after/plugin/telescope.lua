@@ -1,3 +1,5 @@
+local telescope = require("telescope")
+local actions = require("telescope.actions")
 local easypick = require("easypick")
 
 easypick.setup({
@@ -7,4 +9,14 @@ easypick.setup({
             command = "python main.py",
         },
     }
+})
+
+telescope.setup({
+    defaults = {
+        mappings = {
+            i = {
+                ["<space>"] = actions.close,
+            },
+        },
+    },
 })
