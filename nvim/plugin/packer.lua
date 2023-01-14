@@ -17,7 +17,6 @@ return require('packer').startup(function(use)
     use('saadparwaiz1/cmp_luasnip')
     use('rafamadriz/friendly-snippets')
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-    use {'axkirillov/easypick.nvim', requires = 'nvim-telescope/telescope.nvim'}
     use {
         "windwp/nvim-autopairs",
         config = function() require('nvim-autopairs').setup {} end
