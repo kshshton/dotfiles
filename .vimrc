@@ -15,7 +15,7 @@ let mapleader = " "
 inoremap jj <ESC>
 nnoremap Y y$
 map <silent><leader>0 :source % <CR>
-map <silent><leader>1 :python % <CR>
+map <silent><leader>1 :!python % <CR>
 map <silent><leader>s :Ex <CR>
 map <silent><leader>a :bd <CR>
 
