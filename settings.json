@@ -44,7 +44,11 @@
   "editor.lineNumbers": "on",
   "editor.fontWeight": "normal",
   "editor.fontFamily": "Consolas",
-  "files.associations": {"*.py": "python"},
+  "emmet.triggerExpansionOnTab": true,
+  "files.associations": {
+    "*html": "html",
+    "*.py": "python"
+  },
   "workbench.startupEditor": "none",
   "git.confirmSync": false,
   "git.autofetch": true,
@@ -53,6 +57,17 @@
   "[python]": {
     "editor.formatOnType": true
   },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "accessibility.dimUnfocused.opacity": 1,
+  "editor.tabSize": 2,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
   "git.openRepositoryInParentFolders": "never",
   "terminal.integrated.fontFamily": "consolas",
   "workbench.colorTheme": "Default Dark+",
