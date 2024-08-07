@@ -29,16 +29,6 @@
                       "args": []
                   }
               ] 
-          },
-          {
-              "before": ["<leader>", "d"],
-              "after": [],
-              "commands": [
-                  {
-                      "command": "editor.action.revealDefinition",
-                      "args": []
-                  }
-              ]
           }
       ],
   "editor.lineNumbers": "on",
